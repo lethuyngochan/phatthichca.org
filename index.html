@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="icon" type="image/png" href="img/favicon.webp"> -->
+    <meta property="og:image" content="img/share.webp">
+    <link rel="stylesheet" href="css/top.css">
+</head>
+
+<body>
+    <nav>
+        <a href="#">Trang chủ</a>
+        <a href="#">Tổng quan</a>
+        <a href="#">Vũ trụ quan</a>
+        <a href="#">Nhân sinh quan</a>
+        <a href="#">Con đường Đạo</a>
+        <a href="#">Videos</a>
+        <a href="#">Góc nhìn</a>
+        <a href="#">Hoạt động</a>
+    </nav>
+    <div class="zoom-btns">
+        <button id="zoom-in-btn"><img src="img/zoom-in.svg"></button>
+        <button id="zoom-out-btn"><img src="img/zoom-out.svg"></button>
+    </div>
+    <main id="zoom-container">
+        <div id="zoom-element" class="zoomable">
+            <div id="wrapper"><b class="label" style="font-size: 24px;padding: 10px 20px;border-color: #423B2B;">Đạo
+                    Phật</b>
+                <div class="branch lv1" style="margin-left: 240px;">
+                    <div class="entry vu-tru-quan">
+                        <span class="label red-box" style="font-size:20px">
+                            <b>1. Vũ trụ quan</b>
+                            <div class="tooltip">Thế giới và thiên nhiên</div>
+                        </span>
+                        <div class="branch lv2" style="margin-left: 248px;">
+                            <div class="entry"><span class="label red-box" style="text-align: left;">Học thuyết Nhân
+                                    Quả</span>
+                                <div class="branch lv3" style="margin-left: 265px;">
+                                    <div class="entry">
+                                        <span class="label desc-container" style="text-align: left;">
+                                            <span class="desc-content">
+                                                Cái này sinh thì cái kia sinh<br>
+                                                Cái này mất thì cái kia mất<br>
+                                                Cái này biến đổi thì cái kia biến đổi
+                                            </span>
+                                            <div class="desc" style="width: 200px;">
+                                                Chuỗi chu trình không có khởi đầu và không có kết thúc
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="entry entry1" style="margin: 20px 0 0;"><span class="label"
+                                            style="text-align: left;">Gieo nhân
+                                            nào thì gặt quả nấy</span>
+                                        <div class="branch lv4" style="margin-left: 316px;">
+                                            <div class="entry entry2" style="margin: 60px 0px 0;">
+                                                <span class="label">Thân
+                                                    <div class="tooltip">Hành vi</div>
+                                                </span>
+                                            </div>
+                                            <div class="entry" style="margin: 20px 0px 0;">
+                                                <span class="label">Khẩu
+                                                    <div class="tooltip">Lời nói</div>
+                                                </span>
+                                            </div>
+                                            <div class="entry entry3" style="margin: 20px 0px 0;">
+                                                <span class="label">Ý
+                                                    <div class="tooltip">Tâm</div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry"><span class="label red-box" style="text-align: left;">Học thuyết Vô
+                                    Thường</span>
+                                <div class="branch lv3" style="margin-left: 274px;">
+                                    <div class="entry"><span class="label" style="text-align: left;">Vạn sự và
+                                            vạn vật luôn biến đổi không ngừng<br>Nay có mai không, nay còn mai
+                                            mất</span>
+                                    </div>
+                                    <div class="entry entry4"><span class="label" style="text-align: left;">Vạn sự vạn
+                                            vật biến đổi qua 4 giai đoạn</span>
+                                        <div class="branch lv4" style="margin-left: 378px;">
+                                            <div class="entry entry5" style="margin: 60px 0px 0;">
+                                                <span class="label">Thành
+                                                    <div class="tooltip">Quá trình hình thành</div>
+                                                </span>
+                                            </div>
+                                            <div class="entry entry6" style="margin: 20px 0px 0;">
+                                                <span class="label">Trụ
+                                                    <div class="tooltip">Hình thành xong</div>
+                                                </span>
+                                            </div>
+                                            <div class="entry entry7" style="margin: 20px 0px 0;">
+                                                <span class="label">Hoại
+                                                    <div class="tooltip">Biến đổi, hư hỏng</div>
+                                                </span>
+                                            </div>
+                                            <div class="entry" style="margin: 20px 0px 0;">
+                                                <span class="label">Diệt
+                                                    <div class="tooltip">Biến đổi hoàn toàn sang dạng khác</div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry"><span class="label red-box">Học thuyết Vô Ngã</span>
+                                <div class="branch lv3" style="margin-left: 249px;">
+                                    <div class="entry"><span class="label" style="text-align: left;">Không thể
+                                            định lượng</span>
+                                    </div>
+                                    <div class="entry" style="margin: 0 0 30px;"><span class="label"
+                                            style="text-align: left;">Bản chất
+                                            vạn vật là không có giới hạn<br>(Mà chỉ là do giới hạn hiểu biết có con
+                                            người
+                                            tạo cho vạn vật mà thôi)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry"><span class="label red-box">Tứ Diệu Đế</span>
+                                <div class="branch lv3" style="margin-left: 201px;">
+                                    <div class="entry"><span class="label" style="text-align: left;">Khổ
+                                            đế</span>
+                                        <div class="branch lv3" style="margin-left: 171px;">
+                                            <div class="entry sole"><span class="label" style="text-align: left;">Sống
+                                                    theo
+                                                    cách bị giới hạn, bị
+                                                    trói buộc dẫn đến khổ trên thân và khổ trên tâm</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="entry"><span class="label" style="text-align: left;">Tập
+                                            đế</span>
+                                        <div class="branch lv3" style="margin-left: 169px;">
+                                            <div class="entry"><span class="label" style="text-align: left;">Có
+                                                    nguyên nhân, có điều kiện tạo ra đời sống bị giới hạn, trói buộc và
+                                                    đau
+                                                    khổ trên thân và trên tâm</span>
+                                            </div>
+                                            <div class="entry"><span class="label" style="text-align: left;">Nguyên nhân
+                                                    trên tâm là Tham và
+                                                    Sân<br>Nguyên nhân trên Trí là Ngu Si</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="entry"><span class="label" style="text-align: left;">Diệt
+                                            đế</span>
+                                        <div class="branch lv3" style="margin-left: 171px;">
+                                            <div class="entry"><span class="label" style="text-align: left;">Được sống
+                                                    theo
+                                                    cách không có giới
+                                                    hạn, không có trói buộc và không có đau khổ</span>
+                                            </div>
+                                            <div class="entry"><span class="label" style="text-align: left;">Hoàn toàn
+                                                    hạnh
+                                                    phúc và tự
+                                                    do</span>
+                                            </div>
+                                            <div class="entry"><span class="label" style="text-align: left;">Nguyên nhân
+                                                    của
+                                                    nó là do Tâm
+                                                    Thanh Tịnh (Từ, Bi, Hỷ, Xả) và Trí Tuệ (Thấy được sự thật của Vạn
+                                                    Pháp)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="entry"><span class="label" style="text-align: left;">Đạo
+                                            đế</span>
+                                        <div class="branch lv3" style="margin-left: 171px;">
+                                            <div class="entry"><span class="label" style="text-align: left;">Có
+                                                    nguyên nhân, có điều kiện tạo ra đời sống không giới hạn, không trói
+                                                    buộc, không đau khổ, hoàn toàn hạnh phúc, tự do</span>
+                                            </div>
+                                            <div class="entry" style="margin: 0 0 30px;"><span class="label"
+                                                    style="text-align: left;">Và
+                                                    nguyên nhân của nó là gieo Giới Định - Tuệ, 8 Chánh Đaọ và 29 Phẩm
+                                                    Trợ
+                                                    Đạo</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry"><span class="label red-box">Luân Hồi</span>
+                                <div class="branch lv3 desc-container1" style="margin-left: 186px;">
+                                    <div class="desc-content1">
+                                        <div class="entry"><span class="label" style="text-align: left;">Thế giới
+                                                có Ngũ Thể sống trong cách không thấy được Sự Thật</span>
+                                        </div>
+                                        <div class="entry"><span class="label" style="text-align: left;">Chúng ta
+                                                sống trong vòng luẩn quẩn sinh lão bệnh tử</span>
+                                        </div>
+                                        <div class="entry"><span class="label" style="text-align: left;">Có thời
+                                                gian và không gian</span>
+                                        </div>
+                                    </div>
+                                    <div class="desc1">
+                                        Trói buộc, giới hạn, đau khổ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry"><span class="label red-box">Niết Bàn</span>
+                                <div class="branch lv3 desc-container1" style="margin-left: 182px;">
+                                    <div class="desc-content1">
+                                        <div class="entry"><span class="label" style="text-align: left;">Sống theo
+                                                cách hết Tham Sân Si, có Từ Bi, Hỷ Xả và Trí Tuệ</span>
+                                        </div>
+                                        <div class="entry"><span class="label" style="text-align: left;">Sống theo
+                                                cách không bị giới hạn</span>
+                                        </div>
+                                        <div class="entry"><span class="label" style="text-align: left;">Sống theo
+                                                cách tự do, giải thoát, chấm dứt mọi đau khổ</span>
+                                        </div>
+                                    </div>
+                                    <div class="desc1 desc2">
+                                        Giải thoát, vô hạn, hạnh phúc
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="entry nhan-sinh-quan">
+                        <span class="label yellow-box" style="font-size:20px">
+                            <b>2. Nhân sinh quan</b>
+                            <div class="tooltip" style="width: 200px; text-wrap: wrap; top: -60px">Mô tả cấu trúc chúng
+                                sinh
+                                và sự dẫn dắt trong vòng lặp vô minh</div>
+                        </span>
+                        <div class="branch lv2" style="margin-left: 278px;">
+                            <div class="entry"><span class="label yellow-box">Ngũ thể</span>
+                                <div class="branch lv3" style="margin-left: 175px;">
+                                    <div class="entry entry8" style="margin: 60px 0px 0;">
+                                        <span class="label">Sắc
+                                            <div class="tooltip">Cảm giác</div>
+                                        </span>
+                                    </div>
+                                    <div class="entry entry9" style="margin: 20px 0px 0;">
+                                        <span class="label">Thọ
+                                            <div class="tooltip">Cảm xúc</div>
+                                        </span>
+                                    </div>
+                                    <div class="entry entry11" style="margin: 20px 0px 0;">
+                                        <span class="label">Tưởng
+                                            <div class="tooltip">Cảm tưởng</div>
+                                        </span>
+                                    </div>
+                                    <div class="entry entry10" style="margin: 20px 0px 0;">
+                                        <span class="label">Hành
+                                            <div class="tooltip">Cảm tính</div>
+                                        </span>
+                                    </div>
+                                    <div class="entry" style="margin: 20px 0px 0;">
+                                        <span class="label">Thức
+                                            <div class="tooltip">Cảm nhận</div>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry"><span class="label yellow-box">Thập nhị nhân duyên</span>
+                                <div class="branch lv3" style="margin-left: 258px;">
+                                    <div class="entry"><span class="label">Vô minh</span>
+                                        <div class="branch lv3" style="margin-left: 179px;">
+                                            <div class="entry sole"><span class="label" style="text-align: left;">Sự
+                                                    thiếu
+                                                    hiểu biết, hiểu chưa đúng về thế giới quan, lý sự vận hành vũ
+                                                    trụ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="entry"><span class="label">Hành</span>
+                                        <div class="branch lv3" style="margin-left: 159px;">
+                                            <div class="entry sole"><span class="label" style="text-align: left;">Các sự
+                                                    tạo
+                                                    nghiệp từ Thân Khẩu Ý</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="entry"><span class="label">Thức</span>
+                                        <div class="branch lv3" style="margin-left: 158px;">
+                                            <div class="entry sole"><span class="label" style="text-align: left;">Nhận
+                                                    thức
+                                                    về thế giới quan, tuỳ nhận thức này mà dẫn đến tạo nghiệp thiện ác
+                                                    khác
+                                                    nhau</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="entry"><span class="label">Danh sắc</span>
+                                        <div class="branch lv3" style="margin-left: 182px;">
+                                            <div class="entry sole"><span class="label" style="text-align: left;">Là sự
+                                                    chấp
+                                                    trước và nhận định về tên gọi, hình thái, sắc tướng với tâm phân
+                                                    biệt,
+                                                    dễ sinh phiền não</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="entry luc-nhap"><span class="label">Lục nhập</span>
+                                        <div class="branch lv4" style="margin-left: 184px;">
+                                            <div class="entry luc-can"><span class="label">Lục căn</span></div>
+                                            <div class="entry"><span class="label">Vướng mắc vào các sự ham thích hoặc
+                                                    chán
+                                                    ghét những thứ phát sinh bởi Lục nhập này đều khổ</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="entry"><span class="label">Xúc</span>
+                                        <div class="branch lv3" style="margin-left: 151px;">
+                                            <div class="entry sole"><span class="label" style="text-align: left;">Là Lục
+                                                    căn
+                                                    tiếp xúc với thế giới quan bên ngoài tự thân, tự tánh. Mang tính
+                                                    chịu
+                                                    ảnh hưởng cua tha lực</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="entry"><span class="label">Thọ</span>
+                                        <div class="branch lv3" style="margin-left: 150px;">
+                                            <div class="entry sole"><span class="label" style="text-align: left;">Là
+                                                    những
+                                                    nhận định mang tính phân biệt về thế giới quan sau khi tiếp xúc giữa
+                                                    tự
+                                                    thân với ngoại lực, ngoại cảnh.</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="entry"><span class="label">Ái</span>
+                                        <div class="branch lv3" style="margin-left: 139px;">
+                                            <div class="entry sole"><span class="label" style="text-align: left;">Ái là
+                                                    yêu
+                                                    thương. Từ yêu thương này dễ biến thành yêu thích và khát khao chiếm
+                                                    hữu
+                                                    dẫn đến lòng tham ái, ích kỷ.</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="entry"><span class="label">Thủ</span>
+                                        <div class="branch lv3" style="margin-left: 148px;">
+                                            <div class="entry sole"><span class="label" style="text-align: left;">Thủ là
+                                                    nắm
+                                                    giữ, sở hữu riêng mình, không muốn từ bỏ, xả ly. Nếu bị chia cách,
+                                                    mất
+                                                    mát thì khổ não.</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="entry"><span class="label">Hữu</span>
+                                        <div class="branch lv3" style="margin-left: 151px;">
+                                            <div class="entry sole"><span class="label" style="text-align: left;">Hữu là
+                                                    sự
+                                                    chấp vào có sự tồn tại, chấp vào được mất, có không.</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="entry" style="margin: 0 0 30px;"><span class="label">Sanh</span>
+                                        <div class="branch lv3" style="margin-left: 154px;">
+                                            <div class="entry sole"><span class="label" style="text-align: left;">Sinh
+                                                    là
+                                                    vướng mắc trong cuộc sống, các tự niệm, tham dục giữa đời thường khó
+                                                    tránh khỏi như ăn uống, nơi ở, mối quan hệ, bệnh tật...</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="entry"><span class="label">Già, chết</span>
+                                        <div class="branch lv3" style="margin-left: 183px;">
+                                            <div class="entry sole"><span class="label" style="text-align: left;">Vì có
+                                                    sinh
+                                                    nên có già bệnh và hoại diệt, chết. Một vòng luẩn quẩn không hoá
+                                                    giải
+                                                    tận gốc thì khó giải thoát, thong dong tự tại.</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="entry con-duong-dao">
+                        <span class="label green-box" style="font-size:20px">
+                            <b>3. Con đường đạo</b>
+                            <div class="tooltip">Tương tác giữa con người và vũ trụ</div>
+                        </span>
+                        <div class="branch lv2" style="margin-left: 276px;">
+                            <div class="entry"><span class="label green-box">Giới Định Tuệ</span>
+                                <div class="branch lv3" style="margin-left: 216px;">
+                                    <div class="entry entry12" style="margin: 60px 0 0;">
+                                        <span class="label">Giới
+                                            <div class="tooltip">Xây dựng</div>
+                                        </span>
+                                    </div>
+                                    <div class="entry entry13" style="margin: 20px 0 0;">
+                                        <span class="label">Định
+                                            <div class="tooltip">Hình thành và sử dụng</div>
+                                        </span>
+                                    </div>
+                                    <div class="entry" style="margin: 20px 0 0;">
+                                        <span class="label">Tuệ
+                                            <div class="tooltip">Hiểu biết</div>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry height120"><span class="label green-box">Bát Chánh Đạo</span>
+                                <div class="branch lv3 desc-container3" style="margin-left: 222px;">
+                                    <div class="desc-content3">
+                                        <div class="entry" style="margin: 0 0 30px;"><span class="label">Chánh
+                                                ngữ</span>
+                                            <div class="branch lv4" style="margin-left: 194px;">
+                                                <div class="entry sole"><span class="label"
+                                                        style="text-align: left; width:300px;">Nói thiện có ích cho
+                                                        người
+                                                        nghe. Nói đúng theo những gì mình trải qua. Nói phù hợp với hoàn
+                                                        cảnh, trình độ người nghe.</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="entry" style="margin: 0 0 30px;"><span class="label">Chánh
+                                                mạng</span>
+                                            <div class="branch lv4" style="margin-left: 204px;">
+                                                <div class="entry sole"><span class="label"
+                                                        style="text-align: left; width:300px;">Ăn uống, ngủ nghỉ, tập
+                                                        luyện.
+                                                        Làm cho Thân Thể Khoẻ Sạch. Ở môi trường có Thầy Giỏi Bạn
+                                                        Tốt.</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="entry" style="margin: 0 0 30px;"><span class="label">Chánh
+                                                nghiệp</span>
+                                            <div class="branch lv4" style="margin-left: 213px;">
+                                                <div class="entry sole"><span class="label"
+                                                        style="text-align: left; width:300px;">Làm việc lợi cho mình,
+                                                        cho
+                                                        người. Không là việc hại mình, hại người, hại môi trường.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="entry" style="margin: 0 0 70px;"><span class="label">Chánh tin
+                                                tấn</span>
+                                            <div class="branch lv4" style="margin-left: 212px;">
+                                                <div class="entry sole"><span class="label"
+                                                        style="text-align: left; width:300px;">Tinh thần Tự Nguyện Chăm
+                                                        Chỉ
+                                                        làm những điều tốt. Tăng trưởng làm điều Thiện Lành. Giảm điều
+                                                        Xấu
+                                                        Ác cho mình, cho người. Thực hiện các chánh khác đều đặn, tự
+                                                        giác.</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="entry" style="margin: 0 0 30px;"><span class="label">Chánh tư
+                                                duy</span>
+                                            <div class="branch lv4" style="margin-left: 209px;">
+                                                <div class="entry sole"><span class="label"
+                                                        style="text-align: left; width:300px;">Hiểu rõ Luật Nhân Quả.
+                                                        Biết
+                                                        phân biệt Thiện Ác Đúng Sai Phải Trái. Biết bỏ nguyên nhân tạo
+                                                        khổ
+                                                        gây khổ.</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="entry" style="margin: 0 0 30px;"><span class="label">Chánh
+                                                niệm</span>
+                                            <div class="branch lv4" style="margin-left: 202px;">
+                                                <div class="entry sole"><span class="label"
+                                                        style="text-align: left; width:300px;">Nóng giận biết ngay mình
+                                                        nóng
+                                                        giận. Tham lam biết ngay mình tham lam. Ngu si biết ngay mình
+                                                        ngu
+                                                        si.</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="entry" style="margin: 0 0 70px;"><span class="label">Chánh
+                                                định</span>
+                                            <div class="branch lv4" style="margin-left: 197px;">
+                                                <div class="entry sole">
+                                                    <span class="label desc-container"
+                                                        style="text-align: left;width:250px;">
+                                                        <span class="desc-content">Làm chủ cơn nóng giận. Loại
+                                                            bỏ sự tham lam, xoá bỏ tâm xấu ác. Luôn giữ tâm mình Bình
+                                                            Thản,
+                                                            Bình
+                                                            An. Tự chủ lời nói, hành động.</span>
+                                                        <div class="desc">
+                                                            Định
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="entry" style="margin: 0 0 30px;"><span class="label">Chánh
+                                                kiến</span>
+                                            <div class="branch lv4" style="margin-left: 197px;">
+                                                <div class="entry sole">
+                                                    <span class="label desc-container"
+                                                        style="text-align: left;width:250px;">
+                                                        <span class="desc-content">Biết sống Yêu Thương dẫn đến
+                                                            Hạnh Phúc. Biết sống Xấu Ác dẫn đến Đau Khổ. Biết sống Trí
+                                                            Tuệ
+                                                            dẫn
+                                                            đến Hạnh Phúc. Biết sống Ngu Si dẫn đến Đau Khổ.</span>
+                                                        <div class="desc">
+                                                            Tuệ
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="desc3">
+                                        Giới
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry"><span class="label green-box">29 Phẩm trợ đạo</span>
+                                <div class="branch lv3" style="margin-left: 229px;">
+                                    <div class="entry"><span class="label">Thất giác tri</span></div>
+                                    <div class="entry"><span class="label">Tứ chánh cần</span></div>
+                                    <div class="entry"><span class="label">Ngũ căn</span></div>
+                                    <div class="entry"><span class="label">Ngũ lực</span></div>
+                                    <div class="entry"><span class="label">Tứ niệm xứ</span></div>
+                                    <div class="entry"><span class="label">Tứ thần túc</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

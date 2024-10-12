@@ -1,0 +1,550 @@
+body {
+    margin: 0;
+}
+
+nav {
+    background: #1B1B1B;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+nav a {
+    color: #C3B49D;
+    padding: 20px;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: url(../img/bg.jpg) no-repeat center;
+    background-size: cover;
+    color: #423B2B;
+}
+
+main {
+    padding: 90px 30px 50px;
+}
+
+#zoom-in-btn img,
+#zoom-out-btn img {
+    width: 30px;
+}
+
+#zoom-in-btn,
+#zoom-out-btn {
+    background: white;
+    border: none;
+    border-radius: 100px;
+    margin: 0;
+    padding: 8px 10px;
+}
+
+#wrapper {
+    position: relative;
+}
+
+.branch {
+    position: relative;
+    margin-left: 250px;
+}
+
+.branch:before {
+    content: "";
+    width: 50px;
+    border-top: 2px solid #eee9dc;
+    position: absolute;
+    left: -100px;
+    top: 50%;
+    margin-top: 1px;
+}
+
+.branch.lv1:before {
+    border-color: #423B2B;
+}
+
+.vu-tru-quan .branch:before,
+.vu-tru-quan.branch:before {
+    border-top: 2px solid #E85E58;
+}
+
+.nhan-sinh-quan .branch:before,
+.nhan-sinh-quan.branch:before {
+    border-top: 2px solid #F3B841;
+}
+
+.con-duong-dao .branch:before,
+.con-duong-dao.branch:before {
+    border-top: 2px solid #82C062;
+}
+
+.entry {
+    position: relative;
+    min-height: 60px;
+}
+
+.entry:before {
+    content: "";
+    height: 100%;
+    border-left: 2px solid #eee9dc;
+    position: absolute;
+    left: -50px;
+}
+
+.nhan-sinh-quan.entry:before {
+    border-color: #F3B841;
+}
+
+.entry.vu-tru-quan:first-child:before {
+    border-color: #E85E58;
+}
+
+.vu-tru-quan .entry:before {
+    border-left: 2px solid #E85E58;
+    height: 130%;
+}
+
+.vu-tru-quan .entry.entry6:before {
+    height: 122%;
+}
+
+.vu-tru-quan .entry.entry7:before {
+    height: 122%;
+    bottom: 0;
+}
+
+.nhan-sinh-quan .entry:before {
+    border-left: 2px solid #F3B841;
+    height: 154%;
+}
+
+.nhan-sinh-quan .entry.entry9:before,
+.nhan-sinh-quan .entry.entry10:before,
+.nhan-sinh-quan .entry.entry11:before {
+    height: 140%;
+}
+
+.con-duong-dao .entry:before {
+    border-left: 2px solid #82C062;
+}
+
+.height120.entry:before {
+    height: 120%;
+}
+
+.con-duong-dao .desc-content3 .entry:before {
+    height: 220%;
+}
+
+.con-duong-dao .entry.entry13:before {
+    height: 140%;
+}
+
+.entry:after {
+    content: "";
+    width: 50px;
+    border-top: 2px solid #eee9dc;
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    margin-top: 1px;
+}
+
+.entry.nhan-sinh-quan:after {
+    border-color: #F3B841;
+}
+
+.vu-tru-quan .entry:after {
+    border-top: 2px solid #E85E58;
+}
+
+.nhan-sinh-quan .entry:after {
+    border-top: 2px solid #F3B841;
+}
+
+.con-duong-dao .entry:after {
+    border-top: 2px solid #82C062;
+}
+
+.entry:first-child:before {
+    width: 10px;
+    height: 50%;
+    top: 50%;
+    margin-top: 2px;
+    border-radius: 10px 0 0 0;
+}
+
+.entry.entry12:first-child:before {
+    height: 100%;
+}
+
+.entry.entry8:first-child:before {
+    height: 100%;
+}
+
+.entry.entry2:first-child:before {
+    height: 100%;
+}
+
+.entry.entry5:first-child:before {
+    height: 100%;
+}
+
+.entry:first-child:after {
+    height: 10px;
+    border-radius: 10px 0 0 0;
+}
+
+.entry.vu-tru-quan:first-child:after {
+    border-color: #E85E58;
+}
+
+.entry:last-child:before {
+    width: 10px;
+    height: 50%;
+    border-radius: 0 0 0 10px;
+}
+
+.con-duong-dao .desc-content3 .entry:last-child:before {
+    height: 50%;
+}
+
+.entry.con-duong-dao:last-child:before {
+    border-color: #82C062;
+}
+
+.entry.entry4:last-child:before {
+    height: 70%;
+    bottom: 50%;
+}
+
+.entry.entry1:last-child:before {
+    height: 80%;
+    bottom: 50%;
+}
+
+.entry.entry3:last-child:before {
+    height: 100%;
+    bottom: 50%;
+}
+
+.entry:last-child:after {
+    height: 10px;
+    border-top: none;
+    border-bottom: 2px solid #eee9dc;
+    border-radius: 0 0 0 10px;
+    margin-top: -9px;
+}
+
+.entry.con-duong-dao:last-child:after {
+    border-color: #82C062;
+}
+
+.vu-tru-quan .entry:last-child:after {
+    border-bottom: 2px solid #E85E58;
+}
+
+.nhan-sinh-quan .entry:last-child:after {
+    border-bottom: 2px solid #F3B841;
+}
+
+.con-duong-dao .entry:last-child:after {
+    border-bottom: 2px solid #82C062;
+}
+
+.entry.sole:before {
+    display: none;
+}
+
+.entry.sole:after {
+    width: 50px;
+    height: 0;
+    margin-top: 1px;
+    border-radius: 0;
+}
+
+.label {
+    display: block;
+    padding: 5px 10px;
+    line-height: 20px;
+    text-align: center;
+    border: 2px solid #7E7A6F;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -15px;
+}
+
+.branch {
+    display: block;
+}
+
+.label {
+    cursor: pointer;
+}
+
+.red-box {
+    border-color: #E85E58;
+}
+
+.yellow-box {
+    border-color: #F3B841;
+}
+
+.green-box {
+    border-color: #82C062;
+}
+
+.tooltip {
+    position: absolute;
+    background: #E85E58;
+    color: white;
+    font-size: 14px;
+    top: -120%;
+    padding: 2px 5px;
+    text-wrap: nowrap;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.tooltip:after {
+    content: "";
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #E85E58;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.desc {
+    position: absolute;
+    background: #E85E58;
+    color: white;
+    font-size: 14px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    left: 120%;
+    max-width: 200px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.desc:after,
+.desc1:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    border-left: 15px solid #E85E58;
+    left: -26px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.desc3:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    border-left: 15px solid #E85E58;
+    left: -26px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.desc2:after {
+    left: -23px;
+}
+
+.desc-container:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid #E85E58;
+    right: -25px;
+    top: 0;
+}
+
+.desc-container1:after {
+    content: "";
+    position: absolute;
+    height: 85%;
+    border-left: 2px solid #E85E58;
+    top: 15px;
+    left: 480px;
+}
+
+.desc-container3:after {
+    content: "";
+    position: absolute;
+    height: 73%;
+    border-left: 2px solid #E85E58;
+    top: 15px;
+    left: 570px;
+}
+
+.desc1:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    border-left: 10px solid #E85E58;
+    top: -62px;
+    left: -36px;
+}
+
+.desc3:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    border-left: 10px solid #E85E58;
+    top: -280px;
+    left: -36px;
+}
+
+.desc2:before {
+    left: -35px;
+}
+
+.desc-content1:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    border-left: 10px solid #E85E58;
+    bottom: 12px;
+    left: 472px;
+}
+
+.desc-content3:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    border-left: 10px solid #E85E58;
+    bottom: 192px;
+    left: 561px;
+}
+
+.desc-container:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    border-left: 10px solid #E85E58;
+    right: -24px;
+    top: 0;
+}
+
+.desc-content:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    border-left: 10px solid #E85E58;
+    right: -24px;
+    bottom: 0;
+}
+
+.desc1 {
+    position: absolute;
+    left: 507px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #E85E58;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.desc2 {
+    left: 505px;
+}
+
+.desc3 {
+    position: absolute;
+    left: 598px;
+    top: 40%;
+    transform: translateY(-50%);
+    background: #E85E58;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.luc-can:after {
+    content: url(../img/luc-can.svg);
+    position: absolute;
+    top: -111px;
+    left: 30px;
+}
+
+.entry.luc-can {
+    margin: 130px 0 80px;
+}
+
+.entry.luc-can:after {
+    border: none;
+}
+
+.luc-can .label:before {
+    content: "";
+    border-top: 2px solid #F3B841;
+    width: 51px;
+    height: 10px;
+    position: absolute;
+    left: -52px;
+    border-radius: 10px 0 0 0;
+    top: 14px;
+}
+
+.entry.luc-can:before {
+    height: 200%;
+}
+
+.luc-nhap.entry:before {
+    height: 200%;
+    bottom: 0;
+}
+
+.nhan-sinh-quan .lv2,
+.con-duong-dao .lv2 {
+    padding: 10px 0;
+}
+
+/* Container with fixed size and scrollability */
+#zoom-container {
+    overflow: auto; /* Enables scrolling when content overflows */
+}
+
+/* Default zoomable element */
+#zoom-element {
+    transition: transform 0.3s ease; /* Smooth transition for zooming */
+    transform-origin: top left; /* Zoom from top-left corner */
+}
+
+/* Optional button styling */
+button {
+    margin: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.zoom-btns {
+    position: fixed;
+    top: 70px;
+    left: 15px;
+    z-index: 1;
+}
